@@ -1,0 +1,10 @@
+---
+# main playbook for deploying an app (using app hosting to cisco devices)
+
+- name: Deploy Docker Container on Cisco Nexus 9K
+  gather_facts: no
+  hosts: nxos
+  roles:
+    - role: nxos
+      vars:
+        option: "check" # Check is the default behavior, set 'deploy' explicitly

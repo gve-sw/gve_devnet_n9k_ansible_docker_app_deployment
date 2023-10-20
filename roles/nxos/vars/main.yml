@@ -1,0 +1,6 @@
+---
+# Global Variables for NXOS Playbook
+ansible_connection: ansible.netcommon.network_cli
+ansible_network_os: cisco.nxos.nxos
+ansible_user: <nx_os_ssh_user_username>
+ansible_password: <nx_os_ssh_user_password>

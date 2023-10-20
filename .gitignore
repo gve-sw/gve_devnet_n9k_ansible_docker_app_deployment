@@ -1,0 +1,9 @@
+# IDE Files
+.idea/
+.DS_Store
+
+venv
+
+# Sensitive files
+inventory
+!roles/nxos/tests/inventory

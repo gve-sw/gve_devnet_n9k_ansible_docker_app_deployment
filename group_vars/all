@@ -1,0 +1,7 @@
+---
+# Docker specific variables
+image_name: perfsonar/testpoint
+network_type: host
+
+# Enter a numeric value followed by an MB or GB
+truncate_increase: 5GB

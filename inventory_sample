@@ -1,0 +1,5 @@
+# inventory file for Ansible playbook
+
+[nxos]
+X.X.X.X
+Y.Y.Y.Y
