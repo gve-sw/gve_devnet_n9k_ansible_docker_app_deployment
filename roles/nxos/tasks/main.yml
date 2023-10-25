@@ -126,7 +126,7 @@
         fail_msg: "Container Image not present... check runtime output."
     - name: Asset Container Running
       assert:
-        that: command_output.stdout[1] | regex_search('Up (?:[0-9]|[1-5][0-9]|60) second(s)', multiline=True, ignorecase=True) is not none
+        that: command_output.stdout[1] | regex_search('Up (?:[0-9]|[1-5][0-9]|60) (?:second|minute|hour)(s)', multiline=True, ignorecase=True) is not none
         fail_msg: "Container not running... check runtime output."
   always:
     - name: Print Output (Docker Run)
